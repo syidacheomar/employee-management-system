@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Employee Management System</h1>
+    </header>
+    <main>
+        <form id="employeeForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="baseSalary">Base Salary:</label>
+            <input type="number" id="baseSalary" name="baseSalary" required><br>
+
+            <label for="healthAllowance">Health Allowance:</label>
+            <input type="number" id="healthAllowance" name="healthAllowance" required><br>
+
+            <label for="transportAllowance">Transport Allowance:</label>
+            <input type="number" id="transportAllowance" name="transportAllowance" required><br>
+
+            <button type="button" onclick="addEmployee()">Add Employee</button>
+        </form>
+        <div id="employeeDetails"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Employee Management System</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
